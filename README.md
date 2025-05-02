@@ -54,20 +54,17 @@
 ## 目录结构
 ```plaintext
 black-horse-events/
-├── public/                  # 公共资源
-│   └── index.html           # HTML 模板入口
 ├── src/                     # 源码目录
 │   ├── assets/              # 静态资源（图片、样式等）
+│   ├── api/                 # 管理接口调用
 │   ├── components/          # 公共组件
 │   ├── views/               # 页面组件
+│   │   ├──article/          # 管理文章相关页面
+│   │   ├──layout/           # 主体页面
+│   │   ├──login/            # 管理登入相关页面
+│   │   ├──user/             # 管理用户相关页面
 │   ├── router/              # 路由配置
 │   ├── store/               # 状态管理
 │   ├── api/                 # 接口请求封装
 │   ├── utils/               # 工具函数
-│   └── main.ts              # 应用入口
-├── .env.development         # 开发环境配置
-├── .env.production          # 生产环境配置
-├── index.html               # 根 HTML 文件
-├── package.json             # 项目依赖配置
-├── pnpm-lock.yaml           # pnpm 锁定文件
-└── vite.config.ts           # 构建工具配置（使用 Vite）
+
