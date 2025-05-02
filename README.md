@@ -15,7 +15,7 @@
 黑马大事件再写项目是在原黑马程序员所提供的学习代码上的学习在写项目，对部分功能进行了更改优化。使用户体验更加流畅。
 
 ## 黑马大事件原地址
-原项目地址：[[点击跳转](https://fe-bigevent-web.itheima.net/login)]([https://your-original-url.com](https://fe-bigevent-web.itheima.net/login))
+原项目地址：[https://fe-bigevent-web.itheima.net/login](https://fe-bigevent-web.itheima.net/login)
 
 ## 功能
 - 用户登录与鉴权
