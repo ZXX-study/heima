@@ -15,9 +15,7 @@
 黑马大事件再写项目是一个现代化的事件管理系统，旨在提供清晰、高效的事件记录与展示体验，适合教学或实战演练使用。
 
 ## 黑马大事件原地址
-原项目地址：[点击跳转](https://your-original-url.com)
-
-> 请将上方链接替换为实际的黑马大事件原始项目网址。
+原项目地址：[[点击跳转](https://fe-bigevent-web.itheima.net/login)]([https://your-original-url.com](https://fe-bigevent-web.itheima.net/login))
 
 ## 功能
 - 用户登录与鉴权
