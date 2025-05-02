@@ -2,70 +2,76 @@
 
 ## 目录
 1. [项目描述](#项目描述)
-2. [功能](#功能)
-3. [环境要求](#环境要求)
-4. [安装步骤](#安装步骤)
-5. [Bug 改进](#bug-改进)
-6. [目录结构](#目录结构)
+2. [黑马大事件原地址](#黑马大事件原地址)
+3. [功能](#功能)
+4. [环境要求](#环境要求)
+5. [安装步骤](#安装步骤)
+6. [Bug 改进](#bug-改进)
+7. [目录结构](#目录结构)
 
 ---
 
 ## 项目描述
-黑马大事件是B站黑马程序员所提供学习的文章管理系统，用户可以方便地进行文章分类与文章的增删改查。本项目是黑马大事件系统的升级版，加入了更多的功能和优化。
+黑马大事件再写项目是一个现代化的事件管理系统，旨在提供清晰、高效的事件记录与展示体验，适合教学或实战演练使用。
+
+## 黑马大事件原地址
+原项目地址：[点击跳转](https://your-original-url.com)
+
+> 请将上方链接替换为实际的黑马大事件原始项目网址。
 
 ## 功能
-- 用户注册与登录
-- 事件的创建、编辑和删除
-- 事件的分类管理
+- 用户登录与鉴权
+- 事件的增删改查
+- 分类管理
+- 接口联调
+- 响应式前端界面
 
 ## 环境要求
-- 操作系统：Windows/Linux/macOS
-- 编程语言：Python 3.x
-- 前端框架：Vue.js 
+- Node.js 16+
+- 包管理工具：pnpm
+- 浏览器支持：Chrome / Edge / Firefox / Safari 最新版
 
 ## 安装步骤
 1. 克隆本仓库：
     ```bash
     git clone https://github.com/yourusername/black-horse-events.git
     ```
-2. 安装依赖：
+2. 进入项目目录：
     ```bash
     cd black-horse-events
-    pip install -r requirements.txt
     ```
-3. 配置数据库：
-    - 修改 `config.py` 文件中的数据库配置。
-    - 创建数据库并执行迁移：
+3. 安装依赖：
     ```bash
-    python manage.py migrate
+    pnpm install
     ```
 4. 启动应用：
     ```bash
-    python app.py
+    pnpm dev
     ```
 
 ## Bug 改进
-- 修复了事件列表加载缓慢的问题。
-- 改进了用户认证系统，增强了安全性。
-- 修复了某些浏览器上显示不完整的问题。
+- 使用 `setup` + `script` 简化组件结构
+- 优化接口错误处理
+- 修复了分类更新后视图不同步的问题
+- 替换过时的 UI 库组件
 
 ## 目录结构
 ```plaintext
 black-horse-events/
-├── app.py                # 启动应用的主文件
-├── config.py             # 配置文件
-├── requirements.txt      # 项目依赖
-├── static/               # 静态文件
-│   ├── images/           # 图片
-│   ├── css/              # 样式文件
-│   └── js/               # JavaScript 文件
-├── templates/            # 前端模板文件
-│   ├── index.html        # 首页模板
-│   └── event_detail.html # 事件详情模板
-├── models/               # 数据模型
-│   ├── event.py          # 事件模型
-│   └── user.py           # 用户模型
-├── migrations/           # 数据库迁移文件
-└── tests/                # 测试文件
-    ├── test_event.py     # 事件功能测试
-    └── test_user.py      # 用户功能测试
+├── public/                  # 公共资源
+│   └── index.html           # HTML 模板入口
+├── src/                     # 源码目录
+│   ├── assets/              # 静态资源（图片、样式等）
+│   ├── components/          # 公共组件
+│   ├── views/               # 页面组件
+│   ├── router/              # 路由配置
+│   ├── store/               # 状态管理
+│   ├── api/                 # 接口请求封装
+│   ├── utils/               # 工具函数
+│   └── main.ts              # 应用入口
+├── .env.development         # 开发环境配置
+├── .env.production          # 生产环境配置
+├── index.html               # 根 HTML 文件
+├── package.json             # 项目依赖配置
+├── pnpm-lock.yaml           # pnpm 锁定文件
+└── vite.config.ts           # 构建工具配置（使用 Vite）
