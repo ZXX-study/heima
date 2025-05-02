@@ -13,19 +13,24 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vueup/vue-quill": "^1.2.0",
     "axios": "^1.8.4",
     "element-plus": "^2.9.8",
+    "js-base64": "^3.7.7",
     "pinia": "^3.0.1",
     "pinia-plugin-persistedstate": "^4.2.0",
     "vue": "^3.5.13",
+    "vue-bignow": "link:",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.25.1",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/eslint-config-prettier": "^10.2.0",
-    "eslint": "^9.22.0",
-    "eslint-plugin-vue": "~10.0.0",
+    "eslint": "^9.25.1",
+    "eslint-plugin-vue": "~10.0.1",
     "globals": "^16.0.0",
     "husky": "^8.0.0",
     "lint-staged": "^15.5.1",
@@ -38,7 +43,7 @@
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
-      "eslint --fix"
+      "eslint --config ./eslint.config.js --fix"
     ]
   }
 }
