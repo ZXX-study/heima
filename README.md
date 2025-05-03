@@ -50,6 +50,55 @@
 - 添加“记住我”功能
 - element-plus最新版中input输入框已没有默认框，需手动添加
 - 更改了文章分类和文章管理进行编辑操作后点击叉号会使按钮保存hover状态的问题
+- 使用definemodel原地址)
+3. [功能](#功能)
+4. [环境要求](#环境要求)
+5. [安装步骤](#安装步骤)
+6. [Bug 改进](#bug-改进)
+7. [目录结构](#目录结构)
+
+---
+
+## 项目描述
+黑马大事件再写项目是在原黑马程序员所提供的学习代码上的学习在写项目，对部分功能进行了更改优化。使用户体验更加流畅。
+
+## 黑马大事件原地址
+原项目地址：[https://fe-bigevent-web.itheima.net/login](https://fe-bigevent-web.itheima.net/login)
+
+## 功能
+- 用户登录与鉴权
+- 文章事件的增删改查
+- 分类管理
+- 接口联调
+
+## 环境要求
+- Node.js 16+
+- 包管理工具：pnpm
+- 前端框架：Vue.js
+
+## 安装步骤
+1. 克隆本仓库：
+    ```bash
+    git clone https://github.com/ZXX-study/heima.git
+    ```
+2. 进入项目目录：
+    ```bash
+    cd heima
+    ```
+3. 安装依赖：
+    ```bash
+    pnpm install
+    ```
+4. 启动应用：
+    ```bash
+    pnpm dev
+    ```
+
+## Bug 改进
+- 添加“记住我”功能
+- element-plus最新版中input输入框已没有默认框，需手动添加
+- 更改了文章分类和文章管理进行编辑操作后点击叉号会使按钮保存hover状态的问题
+- 使用definemodel简化父子组件之间的双向绑定
 
 ## 目录结构
 ```plaintext
