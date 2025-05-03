@@ -31,7 +31,7 @@
 ## 安装步骤
 1. 克隆本仓库：
     ```bash
-    git clone https://github.com/yourusername/black-horse-events.git
+    git clone https://github.com/ZXX-study/black-horse-events.git
     ```
 2. 进入项目目录：
     ```bash
